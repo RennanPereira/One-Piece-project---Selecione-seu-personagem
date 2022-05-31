@@ -1,0 +1,177 @@
+body{
+  font-family: 'piece', Courier, monospace;
+  background: var(--cor-secundaria);
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+
+  
+}
+
+body::before {
+  content:'';
+  background-image: url("../images/gif-da-logo-de-one-piece-5.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+}
+
+main{
+  min-height: 100vh;
+}
+
+.header {
+  /*z index= altera a camada das folhas*/
+  z-index: 1; 
+  display: flex;    
+/*justify content: tem q ser posto no pai para q ele altere o filho*/
+  justify-content: center; 
+}
+
+.header .tittle {
+  color: var(--cor-secundaria);
+  text-transform: uppercase;
+  font-size: 52px;
+
+  -webkit-text-stroke: 2px var(--cor-padrao);
+  padding-block: 30px;
+}
+
+.characterSelection{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.characterSelection .listOfCharacters {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;  
+  margin-block: 20px;
+  justify-content: center;
+  gap: 1rem;
+  position: relative;
+}
+
+.characterSelection .listOfCharacters .character {
+  border: 2px solid var(--cor-padrao);
+  background-color: var(--cor-padrao);
+  width: 7%;
+  height: 70px;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 5px;
+  transition: 0.15s ease-in-out;
+}
+
+.characterSelection .listOfCharacters .character img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.characterSelection .listOfCharacters .character.selected {
+  border: 2px solid var(--cor-azul-media);
+    animation: c-glowing-blue .3s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+.characterSelection .listOfCharacters .character.space {
+  visibility: hidden; 
+}
+
+.characterSelection .listOfCharacters .character:hover {
+  animation: c-glowing-blue .3s ease-in-out infinite;
+  animation-direction: alternate;
+  transform: scale(1.07);
+  z-index: 2;
+  
+}
+
+.characterSelection .listOfCharacters .character.secondPlayerSelected {
+  border: 2px solid var(--cor-vermelha-fraca);
+    animation: c-glowing-red .3s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+.characterSelection .listOfCharacters .character.secondPlayerSelected:hover {
+    animation: c-glowing-red .3s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+.characterSelection .listOfCharacters .character .tag {
+  display: none;
+  font-family: 'Times New Roman', Times, serif;
+  position: absolute;
+  margin-left: 5px;
+  margin-top: 5px;
+  color: var(--cor-azul-media);
+  animation: text-glowing-blue .3s ease-in-out infinite;
+  animation-direction: alternate;
+  
+}
+
+.characterSelection .listOfCharacters .character.selected .tag {
+  display: block;
+  
+}
+
+.characterSelection .listOfCharacters .character.secondPlayerSelected .tag {
+  display: block;
+  color: var(--cor-padrao);
+  animation: text-glowing-red .3s ease-in-out infinite;
+  animation-direction: alternate;
+}
+
+.characterImages{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.characterImages .bigPlayer {
+  text-align: center;
+  width: 30vw;
+  height: 40vh;
+  position: relative;
+  bottom: 60px;
+}
+
+.characterImages .bigPlayer img {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.characterImages .bigPlayer .name::before {
+  content: '';
+  height: 1.5rem;
+  width: 100%;
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+
+}
+
+.characterImages .bigPlayer .name h2 {
+  color: var(--cor-padrao);
+  font-family: 'command',sans-serif;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 25px;
+  -webkit-text-stroke: 2px var(--cor-secundaria);
+
+}
+
+.characterImages .bigPlayer.player-1 .name::before {
+  background-color: var(--cor-azul-principal);
+}
+
+.characterImages .bigPlayer.player-2 .name::before {
+  background-color: var(--cor-vermelha-principal);
+}

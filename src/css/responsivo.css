@@ -1,0 +1,71 @@
+/*@media = sempre usar o msm seletor ao mudar algum parametro do mobile para desktop.*/
+@media (max-width: 1280px){
+    .header .tittle{
+        font-size: 50px;
+    }
+
+    .characterSelection .listOfCharecters{
+        max-width: 330px;
+    }
+
+    .characterSelection .listOfCharecters .character{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 767px){
+    body::before{
+        background-image: url("../images/bg-mobile.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        opacity: 1;
+    }
+
+    main{
+        padding: 0 5px;
+        justify-content: start;
+    }
+
+    .header{
+        display: none;
+    }
+
+    .characterSelection .listOfCharacters .character.space {
+        display: none;
+    }
+
+    .characterImages{
+        justify-content: center;
+        margin-top: 50px;
+
+    }
+
+    .characterImages .bigPlayer {
+        width: 20vw;
+        height: 30vh;
+    }
+
+    .characterImages .bigPlayer .name h2 {
+       font-size: 16px;
+    }
+
+}
+
+@media (max-width:489px) {
+    .characterImages {
+        display: none;
+    }
+}
+
+@media(max-width: 360px){
+    .characterSelection .listOfCharacters {
+        margin: 0;
+        max-width: 200px;
+      }
+  
+      .characterSelection .listOfCharacters .character {
+       width: 30px;
+      }
+}
