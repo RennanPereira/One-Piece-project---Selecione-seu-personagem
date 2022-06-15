@@ -54,11 +54,12 @@
 
 @media (max-width:489px) {
     .characterImages {
-        justify-content: space-between;
+       justify-content: space-between;
     }
     
     .characterImages .bigPlayer {
-    bottom: 80px;
+       width: 35vw;
+       bottom: 80px;
     }
 
 
