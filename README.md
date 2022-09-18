@@ -22,7 +22,7 @@ Select you character
 Projeto original baseado em um game fictício do anime One Piece.
 
 
-[Clique aqui para abrir o site](https://rennanpereira.github.io/One-Piece-project---Selecione-seu-personagem//)
+[Clique aqui para abrir o site](https://rennanpereira.github.io/One-Piece-project---Selecione-seu-personagem/)
 
 ## 🚀 Tecnologias
 
