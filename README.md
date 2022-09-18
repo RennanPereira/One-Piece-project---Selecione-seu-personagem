@@ -1,9 +1,11 @@
 ![preview](./github/preview.png)
 
 <h1 align="center">
-  One Piece game!
-	Select you character  
+  One Piece game!  
 </h1>
+<h2 align="center">
+Select you character
+</h2>
 
 <p align="center">
   <a href="https://github.com/RennanPereira">
@@ -30,5 +32,8 @@ Projeto original baseado em um game fictício do anime One Piece.
 
 ---
 ## 💜 Contato
-Email: rennanpereira.contato@gmail.com
-Linkedin: https://www.linkedin.com/in/rennan-santos-pereira/
+Email:
+rennanpereira.contato@gmail.com
+
+Linkedin:
+https://www.linkedin.com/in/rennan-santos-pereira/
